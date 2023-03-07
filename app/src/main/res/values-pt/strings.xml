@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">App</string>
+    <string name="KEY_PRESS_ME">Carrega aqui</string>
+    <string name="KEY_WELCOME">Bem vindo</string>
+</resources>

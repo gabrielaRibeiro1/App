@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">App</string>
+    <string name="KEY_PRESS_ME">Press me</string>
+    <string name="KEY_WELCOME">Welcome</string>
 </resources>
