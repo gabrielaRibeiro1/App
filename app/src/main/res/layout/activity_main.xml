@@ -1,110 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
+
+    <TextView
+        android:text=""
         android:id="@+id/b1"
         android:layout_width="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_height="wrap_content"
-        android:onClick="ButtonClick"
-        android:text="@string/KEY_PRESS_ME" />
+        android:layout_centerHorizontal="true"/>
 
     <LinearLayout
-        android:layout_below="@+id/b1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-
-    <Button
-        android:id="@+id/b2"
-        android:layout_margin="5dp"
-        android:width="0dp"
-        android:layout_weight="1"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/b1"
+        >
 
-        />
+        <EditText
+            android:id="@+id/b2"
 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp" />
 
-    <Button
-        android:id="@+id/b3"
-        android:layout_margin="5dp"
-        android:width="0dp"
-        android:layout_weight="1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        />
+        <EditText
+            android:id="@+id/b3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp" />
 
-    <Button
-        android:id="@+id/b4"
-        android:layout_margin="5dp"
-        android:width="0dp"
-        android:layout_weight="1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        />
-
+        <EditText
+            android:id="@+id/b4"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp" />
     </LinearLayout>
-
-
     <Button
-        android:id="@+id/b6"
+        android:id="@+id/b5"
+        android:text="Press"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:layout_weight="1"
-        android:width="0dp" />
+        android:layout_margin="5dp"
+        android:onClick="onAction"/>
 
-
-      <Button
-        android:id="@+id/b7"
+    <Button
+        android:id="@+id/b6"
+        android:text="botao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/b6"
-        android:layout_weight="1"
-        android:layout_alignParentEnd="true"/>
-
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/b5"
+        android:layout_margin="5dp"
+        />
     <LinearLayout
         android:id="@+id/l1"
-        android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        >
+
+        <Button
+            android:id="@+id/b7"
+            android:text="botao"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp" />
 
         <Button
             android:id="@+id/b8"
-            android:layout_margin="5dp"
+            android:text="botao"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp" />
 
-        <Button
-            android:id="@+id/b9"
-            android:layout_margin="5dp"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"/>
 
     </LinearLayout>
-
+    <Button
+        android:id="@+id/b9"
+        android:layout_width="wrap_content"
+        android:text="botao"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_above="@id/l1"/>
     <Button
         android:id="@+id/b10"
-        android:layout_above="@id/l1"
-        android:layout_margin="5dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:text="botao"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_above="@id/b9"/>
 
-    <Button
-        android:id="@+id/b11"
-        android:layout_above="@id/b10"
-        android:layout_margin="5dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
 
 </RelativeLayout>
