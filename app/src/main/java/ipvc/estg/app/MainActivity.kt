@@ -19,17 +19,15 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-
     fun onAction(view: View) {
         val t = findViewById<TextView>(R.id.b1)
         val e1 = findViewById<EditText>(R.id.b2)
         val e2 = findViewById<EditText>(R.id.b3)
         val e3 = findViewById<EditText>(R.id.b4)
 
-        val x= ( e1.text.toString().toInt() + e2.text.toString().toInt()+ e3.text.toString().toInt())
+        val x = ( e1.text.toString().toInt() + e2.text.toString().toInt()+ e3.text.toString().toInt())
 
         t.setText("Resultado: $x")
-
 
     }
 
